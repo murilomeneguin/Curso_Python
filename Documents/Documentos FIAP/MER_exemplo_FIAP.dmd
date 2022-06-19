@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MER_exemplo_FIAP" id="5E87E2A2-965F-BE91-B393-462BB9EC9B0F" version="3.5">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-18 21:49:19 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5E87E2A2-965F-BE91-B393-462BB9EC9B0F</designId>
+</OSDM_Design>
