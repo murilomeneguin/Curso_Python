@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D3067EC-CA65-4A1F-4BC1-301F546ABCE1" name="T_SIP_MULHER">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:23:35 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_mulher" id="6F7F3BE3-1BA2-8A2B-C8A0-CB22567FC026">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:26:19 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_mulher" id="29851663-3ED5-9713-6BD3-F5B7E88B9570">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:26:34 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5DE6C5B1-AB64-FC39-C05B-74B6D56D625D" name="T_SIP_MULHER PK">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:26:32 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F7F3BE3-1BA2-8A2B-C8A0-CB22567FC026</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

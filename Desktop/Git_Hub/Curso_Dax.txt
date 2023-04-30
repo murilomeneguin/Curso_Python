@@ -1,0 +1,190 @@
+Curso_Dax
+
+Dimensão calendário
+List.dates
+Função invocada
+= List.Dates(#date(2015, 1, 1), 365, #duration(1, 0, 0, 0))
+
+###Tornando a dimensão calendário em dinâmica.
+/* Criando Variáveis*/
+
+    MinDate=List.Min(fVendas[Data]),
+    MaxDate=List.Max(fVendas[Data])
+    MaxYear=Date.Year(MaxDate),
+    MinYear-Date.Year(MinDate),
+    InitialDate = #date(MinYear,1,1 ),
+    FinalDate = #date(MaxYear, 1,1)
+    Duration = Duration.Days(InitialDate - FinalDate) + 1
+Fonte = List.Dates(InitialDate,Duration, #duration(1, 0, 0, 0)),
+
+List.min---Lista o menor valor joga na memória.
+List.max---Lista o maximo valor e joga na memória.
+Date.year---Pega o ano da data
+
+/* Criando Variáveis*/
+
+    MinDate=List.Min(fVendas[Data]),
+    MaxDate=List.Max(fVendas[Data]),
+    MaxYear=Date.Year(MaxDate),
+    MinYear=Date.Year(MinDate),
+    InitialDate = #date(MinYear , 1 , 1 ),
+    FinalDate = #date(MaxYear , 12 , 31 ),
+    Duration = Duration.Days(FinalDate - InitialDate) + 1,
+	
+###BUFFERLIST
+Melhorar o processamento.
+
+Tabela=List.Buffer(fVendas[Data])
+
+###Colunas de tempo
+
+Programa á parte.
+######Power QUERY-ETL---Linguagem M
+PBI
+######Power PIVOT-Modelagem 
+######Power BI-DATA VIZ---Linguagem DAX---Medidas
+
+###Classificando e Ordenando a DIM Calendário
+Classificar os mês com o ano
+Concatenar ano com mês
+
+###Granularidade####
+
+Maior o números de colunas menor a granularidade
+Menor o números de colunas maior a granularidade
+
+Inversamente proporcional.
+
+Menor o grão maior é o detalhamento
+
+###Técnicas de rateio-Alterando o grão
+
+PowerBI-Referência-
+
+###Aplicando calculos com a linguagem M ####
+
+Table.RowCount--Conta a quantidade de linhas.
+
+#### A função Lookup#### Não tem relações entre tabelas
+
+LOOKUPVALUE(
+    AuxFrete[VL.Frete],
+    AuxFrete[idNota], fVendas[idNota]
+)
+
+Função de Join
+Sinal de sigma na tabela é a formula DAX
+
+####Ambientes Dinâmicos####
+
+Relacionamenntos das tabelas---Linkar os campos
+
+####Multiplos Fatos--Importando o arquivo de Metas####
+
+###Recursos visuais Background####
+
+####Funções agregadoras###---SUM
+
+SUM--Soma a quantidade
+01 Quantidade total = 
+SUM(fVendas[Quantidade])
+
+02 Frete Total = 
+SUM(fVendas[VL.Frete])
+
+-Agregações com AVERAGE e MAX
+
+AVERAGE---MÉDIA dos dados da coluna
+
+04 QTDE Média por item de venda = 
+AVERAGE(fVendas[Quantidade])
+
+
+MAX---Máximo valor dos dados da coluna.
+
+03 Quantidade Máxima por item = 
+MAX(fVendas[Quantidade])
+
+###Funçõe Related###
+Juntando colunas
+
+-Total de vendas Bruto--
+
+SUM(fVendas[Total por Item])
+
+###Funçoes Iteradoras###
+
+SUMX
+
+
+Sum---Contexto de linhas
+
+Sumx---Contexto de colunas---
+
+SUMX(fVendas,fVendas[Quantidade] * fVendas[Valor Unitario]
+)
+Coluna(Y)--Quantidade
+
+###Iterandao outras tabelas-Combinando SUMX e RELATED###
+
+---Related
+Criar uma coluna-fvenda
+Clicra em criar uma nova coluna--criado em dax
+Valor Unitário = 
+RELATED(dProduto[Valor Unitario])
+
+--Total por Item---
+
+Quantidade x Valor Unitário
+Nova coluna-Total por Item
+Total por Item = 
+fVendas[Quantidade] * fVendas[Valor Unitario]
+
+Total Bruto = 
+SUM(fVendas[Total por Item])
+
+SUMX(
+    fvendas,
+    fVendas[Quantidade] * fVendas[Valor Unitário]----Resolve primeiro essa conta.
+
+SUMX(Tabela, expressão)----Expressão é a conta
+
+A função iterante faz a conta e depois faz o restatnte da conta
+
+SUMX---Primeiro faz a parte x a conta e depois soma
+
+SUMX----Eixox
+Maxx----Eixox
+Minx----Eixox
+AVGX----EixoX
+
+Eixo---X
+EIXO---y
+Combimando Iteração com valores relacionais-SUMX e RELATED
+
+SUMX(
+TABELA,
+CONTA(QUANTIDADE * VL.UNNITARIO)
+
+O DAX é calculado virtualmente
+
+SUMX(
+FVENDAS,
+QUANTIDADE*RELATED(DPRODUTO(vl.int))
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

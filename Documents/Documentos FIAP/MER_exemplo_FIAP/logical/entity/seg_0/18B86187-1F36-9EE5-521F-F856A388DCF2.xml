@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18B86187-1F36-9EE5-521F-F856A388DCF2" name="T_SIP_HOMEN">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:23:15 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_homem" id="4BDF1639-FECA-AD41-3F8C-A4568FE210EB">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:24:05 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_homem" id="48D820F0-53A2-C7F6-8ADE-64AE2DF0F557">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:25:54 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6AC180D0-092A-4544-2E8C-187FEC388C2A" name="T_SIP_HOMEN PK">
+<createdBy>muril</createdBy>
+<createdTime>2022-06-19 17:25:51 UTC</createdTime>
+<ownerDesignName>MER_exemplo_FIAP</ownerDesignName>
+<engineerTo>
+<item key="436D5356-43E5-DCC9-4599-8333C7B3D453" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4BDF1639-FECA-AD41-3F8C-A4568FE210EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

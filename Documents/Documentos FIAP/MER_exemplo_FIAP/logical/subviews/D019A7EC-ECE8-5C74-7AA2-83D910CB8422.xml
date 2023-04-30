@@ -14,6 +14,23 @@
 <display>false</display>
 <notation>2</notation>
 <objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0D3067EC-CA65-4A1F-4BC1-301F546ABCE1" otype="Entity" vid="58C051B8-BBE5-57C3-96BA-4C8725C13E24">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="537" y="231" width="184" height="128"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="18B86187-1F36-9EE5-521F-F856A388DCF2" otype="Entity" vid="07393157-656F-2418-7388-CA978110D11B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="50" y="229" width="187" height="128"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="89C5E95C-911B-B9C3-AE45-159D2E33D0C5" otype="Note" vid="602B9A39-9E55-9015-5D95-2C0A1BAE48EA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="295" y="109" width="317" height="100"/>
+<comment>Ação---Qual a ação pode ocorrer entre um homen e uma mulher.
+
+Casamento---casar---
+
+Homem pode casar no máximo com uma mulher, e uma mulher pode casar com um homem.</comment>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="F8EACD4A-17D9-C09E-762E-3CF2F6258DFF" otype="Entity" vid="C31F67E6-858A-1A6A-F1BB-6C48F53FDF84">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="27" y="27" width="212" height="144"/>
